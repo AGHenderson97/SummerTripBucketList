@@ -74,6 +74,20 @@ h2 {
 #items-list {
   list-style-type: none;
   padding: 0;
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+#items-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+#items-list::-webkit-scrollbar-thumb {
+  background-color: #007BFF;
+}
+
+#items-list::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
 }
 
 #items-list li {
