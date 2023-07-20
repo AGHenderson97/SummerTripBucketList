@@ -4,8 +4,6 @@
 
 This is your private Summer Trip Bucket List app! 🌞🚗🌮 Use it to plan and organize all the exciting activities and places you want to explore during your trip to Austin, TX! 🌇🎒
 
-![App Screenshot](screenshot.png)
-
 ## Overview
 
 As your exciting summer adventure awaits, this app will help you keep track of your most thrilling plans and cherished memories. Add all the things you both want to do together, from thrilling activities and sightseeing spots to scrumptious local cuisines you can't wait to try! 📝✨
