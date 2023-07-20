@@ -9,7 +9,7 @@ body {
   }
   
   .bucket-list {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -18,7 +18,7 @@ body {
   }
   
   #new-item {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
   }
