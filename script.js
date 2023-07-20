@@ -8,10 +8,8 @@ function addItem() {
     const newItem = document.createElement("li");
     newItem.className = "item"; // Add the "item" class to the new list item
     newItem.innerHTML = `
-      <label class="item-label">
-        <input type="checkbox" class="completed-checkbox">
-        <span>${newItemText}</span>
-      </label>
+      <input type="checkbox" class="completed-checkbox">
+      <span>${newItemText}</span>
       <button class="delete-button">Delete</button>
     `;
     itemList.appendChild(newItem);
@@ -55,14 +53,9 @@ function handleCheckboxChange(event) {
 // Add event listeners
 document.getElementById("add-button").addEventListener("click", handleAddButtonClick);
 document.getElementById("new-item").addEventListener("keypress", handleEnterKeyPress);
-document.addEventListener("click", function(event) {
+document.getElementById("items-list").addEventListener("change", handleCheckboxChange);
+document.addEventListener("click", function (event) {
   if (event.target && event.target.classList.contains("delete-button")) {
     handleDeleteButtonClick(event);
-  }
-});
-
-document.addEventListener("change", function(event) {
-  if (event.target && event.target.classList.contains("completed-checkbox")) {
-    handleCheckboxChange(event);
   }
 });
