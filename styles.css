@@ -47,10 +47,11 @@ h2 {
 }
 
 .bucket-list {
-  max-width: 500px;
+  max-width: 450px;
+  height: 93px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 5px;
   background-color: #fff;
 }
@@ -59,15 +60,20 @@ h2 {
   width: 95%;
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 16px;
 }
 
 #add-button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #333;
   color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
