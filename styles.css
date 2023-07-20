@@ -169,3 +169,47 @@ h1, h2, h3 {
   color: black;
   text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
 }
+
+/* Media Query for iPhones and Mobile Devices */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .bucket-list {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  #new-item {
+    font-size: 16px;
+  }
+
+  #add-button {
+    font-size: 16px;
+  }
+
+  .delete-button {
+    font-size: 12px;
+  }
+
+  #items-list li {
+    padding: 5px;
+  }
+}
+
+.centered-text {
+  text-align: center;
+  font-family: 'Oswald', cursive;
+  font-size: 20px;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: black;
+  text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
+}
