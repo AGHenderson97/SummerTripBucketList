@@ -1,4 +1,4 @@
-# Lindsey & Abigail's Summer Trip Bucket List 🏖️🌴
+# Summer Trip Bucket List 🏖️🌴
 
 ## Welcome, Lindsey and Abigail! 🎉
 
@@ -30,7 +30,7 @@ Are you both ready for an unforgettable summer experience? Let this app guide yo
 
 ## Share the Fun... or Not! 🤫💌
 
-Since this app is just for you both, you can keep it completely private or share it only with each other. It's your secret adventure planning tool! 🤐🗝️
+Since this app is just for you both, you can keep it completely private or share it only with each other. It's your secret adventure-planning tool! 🤐🗝️
 
 ## Wishing You an Amazing Summer! 🌞🌴🎈
 
