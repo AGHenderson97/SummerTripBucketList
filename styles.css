@@ -79,7 +79,7 @@ h2 {
 .delete-button {
   width: 15%;
   padding: 5px;
-  background-color: #333;
+  background-color: red;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -108,11 +108,12 @@ h2 {
 }
 
 #items-list li {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #333;
 }
 
 #items-list li:last-child {
@@ -127,15 +128,10 @@ h2 {
 }
 
 .completed-checkbox {
-  margin-left: 0px;
+  margin-right: 10px;
   transform: scale(1.75);
 }
 
-/* Show completed items with a strike-through style */
-.completed {
-  text-decoration: line-through;
-  color: #777;
-}
 
 .centered-text {
   text-align: center;
