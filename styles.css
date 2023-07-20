@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 body, html {
   height: 100%;
   margin: 0;
@@ -91,8 +92,8 @@ h2 {
   list-style-type: none;
   font-family: 'Oswald', sans-serif;
   padding: 0;
-  max-height: 345px; 
-  overflow-y: auto; 
+  max-height: 345px;
+  overflow-y: auto;
 }
 
 #items-list::-webkit-scrollbar {
@@ -158,58 +159,45 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-.centered-text {
-  text-align: center;
-  font-family: 'Oswald', cursive;
-  font-size: 20px;
-  color: #333;
-}
-
-h1, h2, h3 {
-  color: black;
-  text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
-}
-
-/* Media Query for iPhones and Mobile Devices */
-@media screen and (max-width: 768px) {
+/* Styles for mobile devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
   h1 {
-    font-size: 40px;
+    font-size: 48px;
+    margin-top: 40px; /* Adjust the spacing from the top */
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 28px;
+    margin-top: 20px; /* Adjust the spacing from the top */
   }
 
   .bucket-list {
-    max-width: 90%;
-    padding: 10px;
+    max-width: 90%; /* Adjust the width for mobile devices */
+    margin: 0 auto;
+    padding: 20px;
+    border: 5px solid #333;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   #new-item {
-    font-size: 16px;
+    width: 100%; /* Adjust the width for mobile devices */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 18px; /* Adjust the font size for mobile devices */
   }
 
   #add-button {
-    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Adjust the font size for mobile devices */
+    cursor: pointer;
   }
-
-  .delete-button {
-    font-size: 12px;
-  }
-
-  #items-list li {
-    padding: 5px;
-  }
-}
-
-.centered-text {
-  text-align: center;
-  font-family: 'Oswald', cursive;
-  font-size: 20px;
-  color: #333;
-}
-
-h1, h2, h3 {
-  color: black;
-  text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
 }
