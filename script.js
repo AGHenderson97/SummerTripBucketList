@@ -7,14 +7,17 @@ function addItem() {
       const itemList = document.getElementById("items-list");
       const newItem = document.createElement("li");
       newItem.innerHTML = `
-        ${newItemText}
-        <button class="delete-button">Delete</button>
-      `;
-      itemList.appendChild(newItem);
-  
-      input.value = "";
-    }
-  }
+      <label class="item">
+      <input type="checkbox" class="completed-checkbox">
+      <span>${newItemText}</span>
+      <button class="delete-button">Delete</button>
+    </label>
+  `;
+  itemList.appendChild(newItem);
+
+  input.value = "";
+}
+}
   
   // Function to handle the click event on the Add button
   function handleAddButtonClick() {
@@ -34,6 +37,20 @@ function addItem() {
     listItem.remove();
   }
   
+  function handleCheckboxChange(event) {
+    const checkbox = event.target;
+    const listItem = checkbox.closest("li");
+  
+    if (checkbox.checked) {
+      // If checkbox is checked, add a class to the parent li for styling
+      listItem.classList.add("completed");
+    } else {
+      // If checkbox is unchecked, remove the class
+      listItem.classList.remove("completed");
+    }
+  }
+  
+
   // Add event listeners
   document.getElementById("add-button").addEventListener("click", handleAddButtonClick);
   document.getElementById("new-item").addEventListener("keypress", handleEnterKeyPress);
