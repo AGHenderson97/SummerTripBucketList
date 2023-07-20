@@ -17,11 +17,11 @@ body {
 h1 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 58px;
+  font-size: 60px;
   color: #333;
+  font-weight: bold;
+  transform: skewY(-5deg);
   margin: 10px 0;
-  transform: skewY(-10deg);
-
 }
 
 @keyframes bounce {
@@ -39,7 +39,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 38px;
+  font-size: 35px;
   color: #333;
   margin-bottom: 10px;
   animation: bounce 1s infinite;
@@ -53,8 +53,7 @@ h2 {
   padding: 20px;
   border: 1px solid #333;
   border-radius: 5px;
-  background-color: #fff;
-}
+  background-color: rgba(255, 255, 255, 0.8);}
 
 #new-item {
   width: 95%;
@@ -79,6 +78,7 @@ h2 {
 
 #items-list {
   list-style-type: none;
+  font-family: 'Oswald', sans-serif;
   padding: 0;
   max-height: 400px; 
   overflow-y: auto; 
