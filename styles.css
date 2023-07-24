@@ -56,7 +56,7 @@ h2 {
 }
 
 #new-item {
-  width: 90.5%; 
+  width: 91%; 
   padding: 25px; /* Increase padding for larger text box */
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -78,7 +78,7 @@ h2 {
 
 .delete-button {
   width: 45px;
-  padding: 5px;
+  padding: 25px;
   background-color: red;
   color: #fff;
   border: none;
