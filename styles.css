@@ -77,13 +77,13 @@ h2 {
 }
 
 .delete-button {
-  width: 12%;
+  width: 45px;
   padding: 5px;
   background-color: red;
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 35px;
   cursor: pointer;
 }
 
