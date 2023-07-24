@@ -135,8 +135,8 @@ h2 {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 45px;
   border: 2px solid #3cb371; /* Green color */
   border-radius: 4px;
   cursor: pointer;
