@@ -56,7 +56,7 @@ h2 {
 }
 
 #new-item {
-  width: 90%; /* Make the text box fill the whole container */
+  width: 90.5%; 
   padding: 25px; /* Increase padding for larger text box */
   margin-bottom: 20px;
   border: 1px solid #ccc;
