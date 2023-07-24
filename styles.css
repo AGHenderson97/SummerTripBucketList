@@ -47,7 +47,7 @@ h2 {
 }
 
 .bucket-list {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 50px; /* Increase padding for larger text box */
   border: 5px solid #333;
