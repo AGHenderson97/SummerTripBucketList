@@ -18,7 +18,7 @@ body {
 h1 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 120px; /* Increase font size for larger header */
+  font-size: 110px; /* Increase font size for larger header */
   color: #333;
   font-weight: bold;
   transform: skewY(-5deg);
@@ -56,7 +56,7 @@ h2 {
 }
 
 #new-item {
-  width: 120%; /* Make the text box fill the whole container */
+  width: 95%; /* Make the text box fill the whole container */
   padding: 25px; /* Increase padding for larger text box */
   margin-bottom: 20px;
   border: 1px solid #ccc;
