@@ -9,7 +9,7 @@ body {
   font-family: Oswald, sans-serif;
   background-color: #f0f0f0;
   background-image: url('images/austin_background.jpg');
-  background-size: contain;
+  background-size: center;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
