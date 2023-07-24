@@ -18,7 +18,7 @@ body {
 h1 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 110px; /* Increase font size for larger header */
+  font-size: 125px; /* Increase font size for larger header */
   color: #333;
   font-weight: bold;
   transform: skewY(-5deg);
@@ -40,7 +40,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 80px; /* Increase font size for larger subheader */
+  font-size: 95px; /* Increase font size for larger subheader */
   color: #333;
   margin-bottom: 20px; /* Add more margin to push it down on the page */
   animation: bounce 1s infinite;
@@ -56,8 +56,8 @@ h2 {
 }
 
 #new-item {
-  width: 90%; /* Make the text box fill the whole container */
-  padding: 15px; /* Increase padding for larger text box */
+  width: 80%; /* Make the text box fill the whole container */
+  padding: 25px; /* Increase padding for larger text box */
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -67,7 +67,7 @@ h2 {
 
 #add-button {
   width: 100%;
-  padding: 12px;
+  padding: 25px;
   background-color: #333;
   color: #fff;
   border: none;
