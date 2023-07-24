@@ -18,7 +18,7 @@ body {
 h1 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 100px; /* Increase font size for larger header */
+  font-size: 110px; /* Increase font size for larger header */
   color: #333;
   font-weight: bold;
   transform: skewY(-5deg);
@@ -40,7 +40,7 @@ h1 {
 h2 {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 70px; /* Increase font size for larger subheader */
+  font-size: 80px; /* Increase font size for larger subheader */
   color: #333;
   margin-bottom: 20px; /* Add more margin to push it down on the page */
   animation: bounce 1s infinite;
