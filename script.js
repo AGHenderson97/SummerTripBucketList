@@ -59,3 +59,65 @@ document.addEventListener("click", function (event) {
     handleDeleteButtonClick(event);
   }
 });
+
+// Initialize Firebase
+fetch('firebaseConfig.json')
+  .then((response) => response.json())
+  .then((config) => {
+    firebase.initializeApp(config);
+    // Now you can use Firebase in your app, e.g., syncing data with Realtime Database
+
+    // Get a reference to the Firebase Realtime Database
+    const database = firebase.database();
+    const checklistRef = database.ref('checklist');
+
+    // Function to add a new bucket list item to the list
+    function addItemToChecklist(itemText) {
+      checklistRef.push({
+        text: itemText,
+        checked: false
+      });
+    }
+
+    // Function to display the checklist items on the page
+    function displayChecklistItems(data) {
+      const itemList = document.getElementById("items-list");
+      itemList.innerHTML = "";
+
+      data.forEach((itemSnapshot) => {
+        const itemKey = itemSnapshot.key;
+        const itemData = itemSnapshot.val();
+
+        const listItem = document.createElement("li");
+        listItem.className = "item";
+        listItem.setAttribute("data-key", itemKey);
+        listItem.innerHTML = `
+          <input type="checkbox" class="completed-checkbox" ${itemData.checked ? "checked" : ""}>
+          <span>${itemData.text}</span>
+          <button class="delete-button">Delete</button>
+        `;
+
+        // Attach event listener for the Delete button
+        listItem.querySelector(".delete-button").addEventListener("click", handleDeleteButtonClick);
+
+        itemList.appendChild(listItem);
+      });
+    }
+
+    // Function to listen for changes in the checklist data
+    function listenForChanges() {
+      checklistRef.on('value', (snapshot) => {
+        const data = snapshot.val();
+        if (data) {
+          const checklistItems = Object.values(data);
+          displayChecklistItems(checklistItems);
+        }
+      });
+    }
+
+    // Call the function to listen for changes in the checklist data
+    listenForChanges();
+  })
+  .catch((error) => {
+    console.error('Error loading Firebase config:', error);
+  });
